@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A student-made prototype for finding community resources around Orlando.">
+  <title>Commonplace</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="redesign.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#resources">Skip to resources</a>
+  <header class="site-header wrap">
+    <div class="brand"><img class="site-logo" src="logo.png" alt="">commonplace<span class="brand-dot">.</span></div>
+    <nav class="page-nav" aria-label="Pages"><a href="index.html" aria-current="page">Home</a><a href="events.html">Events</a><a href="sources.html">Sources</a></nav>
+  </header>
+  <main id="home">
+    <section class="hero wrap" aria-labelledby="hero-heading">
+      <div class="hero-copy"><h1 id="hero-heading">Find events in Orlando</h1><p>Explore local services, organizations, and activities that help make Orlando feel like home.</p></div>
+      <figure class="photo hero-photo"><img src="orlando-lake-web.jpg" alt="Lake Eola fountain and the downtown Orlando skyline"><figcaption>Lake Eola Park · Photo by JER3L1337 / Wikimedia Commons</figcaption></figure>
+    </section>
+    <section class="intro wrap" id="how-it-works"><div><h2>Easier to find events</h2></div><div class="intro-text"><p>From finding your next opportunity to getting a little extra support, the right place can make all the difference.</p><p>We’re bringing useful local starting points together so you can spend less time searching and more time moving forward.</p></div></section>
+    <section class="directory" id="resources"><div class="wrap"><div class="section-top"><div><h2>Find your kind of help</h2><p>Start with what you’re looking for, and commonplace can help you begin.</p></div></div>
+      <div class="search-row"><label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Search resources</span><input id="search" type="search" placeholder="Try “food”, “jobs”, or “library”"></label></div>
+      <div class="filter-row"><span class="filter-label">BROWSE BY</span><div class="filters" role="group" aria-label="Filter resources by category"><button class="filter active" data-filter="All" aria-pressed="true">All resources</button><button class="filter" data-filter="Food" aria-pressed="false">Food</button><button class="filter" data-filter="Housing" aria-pressed="false">Housing</button><button class="filter" data-filter="Jobs" aria-pressed="false">Jobs</button><button class="filter" data-filter="Learning" aria-pressed="false">Learning</button><button class="filter" data-filter="Family" aria-pressed="false">Family</button><button class="filter" data-filter="Getting around" aria-pressed="false">Getting around</button></div></div>
+      <div class="results-heading"><span id="results-count" aria-live="polite"></span></div><noscript><p>JavaScript is needed to search the directory. You can still find help through the <a href="https://www.orlando.gov/Our-Government/Departments-Offices/Executive-Offices/Communications-and-Neighborhood-Relations/Neighborhood-Relations/Office-For-Local-Assistance-OLA">City of Orlando’s Office for Local Assistance</a>.</p></noscript><div class="cards" id="cards"></div><div class="empty" id="empty" hidden><h3>No matches just yet.</h3><p>Try another search or choose a different category.</p><button class="text-link" id="clear-filters">CLEAR FILTERS ↗</button></div><p class="directory-note">Information checked November 10, 2026.</p>
+    </div></section>
+    <section class="community wrap" id="about"><figure class="photo community-photo"><img src="lake-eola-park-web.jpg" alt="A sunny afternoon at Lake Eola Park in downtown Orlando" loading="lazy"><figcaption>Lake Eola Park · Photo by OrlandoThings.com / Wikimedia Commons</figcaption></figure><div class="community-copy"><h2>There’s a place for everyone.</h2><p>Commonplace helps connect Orlando residents with local organizations and opportunities.</p></div></section>
+    <section class="help-strip"><div class="wrap help-inner"><div><h2>Start a conversation.</h2><p>Orlando’s Office for Local Assistance can help connect residents with local services.</p></div><a class="button button-light" href="https://www.orlando.gov/Our-Government/Departments-Offices/Executive-Offices/Communications-and-Neighborhood-Relations/Neighborhood-Relations/Office-For-Local-Assistance-OLA" target="_blank" rel="noopener noreferrer">Visit the city’s resource page <span>↗</span></a></div></section>
+  </main>
+  <footer class="wrap"><div class="brand">commonplace<span class="brand-dot">.</span></div><p>A student-made FBLA project.<br>Not affiliated with the City of Orlando or listed organizations.<br><a href="sources.html">Sources and project credits</a></p></footer>
+</body>
+</html>
